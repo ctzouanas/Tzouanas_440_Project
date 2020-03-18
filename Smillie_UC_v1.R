@@ -11,6 +11,7 @@ library(patchwork)
 
 project_name = "20_440_Smillie_UC"
 figdir <-  "Plot_Folder"
+objdir <- "Object_Folder"
 print('hello darkness my old friend')
 
 spam.pathname <- "gene_sorted-Imm.matrix.mtx"
@@ -101,7 +102,7 @@ p2 <- DimPlot(smillie.downsampled.imm, reduction = "umap", cells.highlight = Whi
 plot(p1 + p2)
 print('when my eyes were stabbed by the flash of a neon light')
 
-saveRDS(smillie.downsampled.imm, paste0('Project_Objects/', project_name, '_initial_clustered_withmetadata_200311.rds'), compress= T)
+saveRDS(smillie.downsampled.imm, paste0(objdir, '/', project_name, '_initial_clustered_withmetadata.rds'), compress= T)
 print('that split the night')
 
 jpeg(paste(figdir,"/",project_name,"_umap_split_by_health.jpg", sep = ""))
