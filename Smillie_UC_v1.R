@@ -14,9 +14,9 @@ figdir <-  "Plot_Folder"
 objdir <- "Object_Folder"
 print('hello darkness my old friend')
 
-spam.pathname <- "gene_sorted-Imm.matrix.mtx"
-gene.names.sheet <- "Imm.genes.tsv"
-barcodes.sheet <- "Imm.barcodes2.tsv"
+spam.pathname <- "RawData_Folder/gene_sorted-Imm.matrix.mtx"
+gene.names.sheet <- "RawData_Folder/Imm.genes.tsv"
+barcodes.sheet <- "RawData_Folder/Imm.barcodes2.tsv"
 
 colon.spam <- read.MM(spam.pathname)
 colon.gene.names <- read.table(gene.names.sheet, header = F)
